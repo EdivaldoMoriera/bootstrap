@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Título (jumbotron) -->
+<!-- Breadcrumb -->
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Formulários</h1>
+    <p class="leadm-1">Exemplos de alguns Componentes de Formulários</p>
+</div>
+<nav class="mb-5">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#/paginas/bemVindo.html">home</a>
+        </li>
+        <li class="breadcrumb-item active">Formulários</li>
+    </ol>
+</nav>
+
+<p class="lead">
+    <a href="https://getbootstrap.com/docs/4.0/components/forms/" target="_black">Documentação Oficial</a>
+</p>
+
+<!-- Formulário -->
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">
+            Exemplo de Formulario
+        </h5>
+    </div>
+    <div class="card-body">
+        <form action="" class="container-fluid">
+            <div class="form-row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Informe o seu nome">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="nome">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-aprepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="email" class="form-control" id="email" placehoder="Informe o seu email">
+                        </div>
+                        <small class="form-text text-muted">
+                            Enviaremos um email pra confirmar o cadastro.
+                        </small>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="linguagemPreferida">Linguagem</label>
+                        <select name="" id="linguagemPreferida" class="form-control">
+                            <option value="">Selecione</option>
+                            <option value="">Java</option>
+                            <option value="">Js</option>
+                            <option value="">python</option>
+                            <option value="">C#</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="form-row mb-0">
+                <div class="col-12 d-flex justify-content-end"><!--alinha os botões a direita-->
+                    <button class="btn btn-primary mr-2" type="submit">Salvar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

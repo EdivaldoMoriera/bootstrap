@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- Título (jumbotron) -->
+<!-- Breadcrumb -->
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Componentes</h1>
+    <p class="leadm-1">exemplos de alguns Componentes do bootstrap</p>
+</div>
+<nav class="mb-5">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#/paginas/bemVindo.html">home</a>
+        </li>
+        <li class="breadcrumb-item active">Componentes</li>
+    </ol>
+</nav>
+<h1>1. Botões -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Botões -->
+<div>
+    <div class="mb-3">
+       <button class="btn btn-primary">My Button</button>
+       <div class="button btn btn-secondary">editar</div>
+       <button class="btn btn-warning">Ateção</button>
+       <button class="btn btn-success">Sucesso</button>
+       <button class="btn btn-danger">Atencao</button>
+       <button class="btn btn-outline-success">branquinho</button>
+       <button class="btn btn-danger" disabled="disabled">desativado</button>
+       <button class="btn btn-danger" data-toggle="button">selecionar</button>
+       
+    </div>
+</div>
+<div>
+    <button class="btn btn-primary btn-lg btn-block p-3 my-3">meu botao</button>
+</div>
+
+<div class="btn-group mb-3">
+    <button class="btn btn-info">esquerda</button>
+    <button class="btn btn-info">centro</button>
+    <button class="btn btn-info active">Direita</button>
+</div>
+
+<div class="dropdown">
+    <button class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">comprar !</button>
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Paypal</a>
+        <a href="#" class="dropdown-item">Amazon</a>
+        <a href="https://pagseguro.uol.com.br/" target="_blank" class="dropdown-item">pagSeguro</a>
+
+    </div>
+</div>
+
+
+<h1 class="mt-5">2. Progresso -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/progress/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Progresso -->
+<div>
+    <div class="progress mb-4">
+        <div class="progress-bar" style="width:25%">progresso</div>
+    </div>
+    <div class="progress mb-4">
+        <div class="progress-bar progress-bar-striped bg-success" style="width:50%">50%</div>
+    </div>
+    <div class="progress" style="height:40px">
+        <div class="pregress-bar bg-primary" style="width:15%">15%</div>
+        <div class="progress-bar bg-danger" style="width:30%">30%</div>
+        <div class="progress-bar bg-info" style="width:20%">20%</div>
+        <progress-bar class="bg-warning" style="width:25%">25%</progress-bar>
+    </div>
+</div>
+
+<h1 class="mt-5">3. Mensagens (Alertas) -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Alertas -->
+<div class="alert alert-success">
+    Operação realizada com sucesso
+</div>
+<div class="alert alert-warning">
+    <strong>Cuidado</strong> Operação gerou impacto no estoque
+</div>
+<div class="alert alert-danger">
+    <strong>Erro</strong> Ocorreu um erro inesperado <a href="#" class="alert-link">Mais detalhes</a>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-4">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  </div>
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+<h1 class="mt-5">4. Paginação -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/pagination/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Peginação -->
+<div>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link">Anterior</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link ">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link">Proximo</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<h1 class="mt-5">5. Tooltip -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/tooltip/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Tooltip -->
+<div class="alert alert-warning">
+    precisa de JS <strong>E Agora?</strong>
+</div>
+<button class="btn btn-danger" data-toggle="tooltp" data-placement="top" title="Pense Antes">
+    excluir
+</button>
+
+
+<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip na parte superior">
+    Tooltip na parte superior
+  </button>
+  <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="right" title="Tooltip na direita">
+    Tooltip na direita
+  </button>
+  <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tooltip na parte inferior">
+    Tooltip na parte inferior
+  </button>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip na esquerda">
+    Tooltip na esquerda
+  </button>
+
+  <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Tooltip em elemento desativado">
+    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Botão desativado</button>
+  </span>
+<h1 class="mt-5">6. Slider -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/carousel/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Slider -->
+<div>
+    <div class="carousel slide" id="slider" data-ride="carousel">
+        <div class="carousel-inner bg-dark">
+            <div class="carousel-item active">
+                <img src="/imgs/slide1.png" alt="Slide1" class="d-block mx-auto" >
+            </div>
+            <div class="carousel-item ">
+                <img src="/imgs/slide2.png" alt="Slide2" class="d-block mx-auto" >
+            </div>
+            <div class="carousel-item ">
+                <img src="/imgs/slide3.png" alt="Slide3" class="d-block mx-auto" >
+            </div>
+        </div>
+        <a href="#slider" class="carousel-control-prev"  data-slide="prev">
+            <span  class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+
+        </a>
+    </div>
+
+    
+</div>
+
+
+
+<h1 class="mt-5">7. Accordion -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/collapse/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Accordion -->
+<div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Colapsando para o item 1
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          item um
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Colapsando item 2
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+         item 2
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            olapsando item 3
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          item 3
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+    // ...
+</script>
